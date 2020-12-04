@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <ul id="menu">
+        <li class="menu-item"><h5 class="menu-h1">Hjem</h5><img src="assets/cloud.png" alt="" class="menu-img"></li>
+        <li class="menu-item"><h5 class="menu-h2">Om Os</h5><img src="assets/cloud.png" alt="" class="menu-img"></li>
+        <li class="menu-item"><img src="assets/cloud.png" alt="" class="menu-img"><h5 class="menu-h3">Feedback</h5></li>
+    </ul>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Maven</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Økologiske køer bliver behandlet rigtig godt. De får det og
+              spise som er bedst og smager bedst. En koventionel kvægfarm går ikke så meget op i
+              hvad der er bedst for kvæget, men istedet hvad der får den til og vokse mest. Dette er 
+              mere effektivt og det går hurtigere for kvæget og blive stort og klar til slagtning. Når det går
+              hurtigere betyder det at de skal bruge mindre energi pr dyr. 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+            </div>
+          </div>
+        </div>
+    </div>
+        <div class="modal fade" id="exampleModa2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Hoved</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Økologiske køer går udenfor på store græs marker hvor det tager meget langtid for dem og vokse.
+                  Derfor køber landmænd på en koventionel gård meget næringsrigt foder så de kan vokse hurtigere, der er selvfølgelig et minus ved alting. Ved næringsrigt foder er det at kalvene prutter mere(Klik på bag partiet for at se mere om prutter).
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModa3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Bag partiet</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Kalve prutter og de prutter en del
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn... btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+            <div class="modal fade" id="exampleModa4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel4">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+            </div> 
+      <div id="cow">
+        <img src="assets/heleko.png" alt="" id="heleko">
+        <img src="assets/ben.png" alt="" id="ben" data-toggle="modal" data-target="#exampleModa3">
+        <img src="assets/hoved.png" alt="" id="hoved" data-toggle="modal" data-target="#exampleModa2">
+        <img src="assets/mave.png" alt="" id="mave" data-toggle="modal" data-target="#exampleModal">
+        <img src="assets/røv.png" alt="" id="røv" data-toggle="modal" data-target="#exampleModa4">
+    </div>
+</body>
+</html>
